@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heartbreak</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="app.js" defer></script>
+    <link rel="icon" type="image/png" href="/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <!--Analytics-->
+    <script type="text/javascript">!function (e, t) { var n, o, p, r; t.__SV || (window.mixpanel = t, t._i = [], t.init = function (e, n, o) { function i(e, t) { var n = t.split("."); 2 == n.length && (e = e[n[0]], t = n[1]), e[t] = function () { e.push([t].concat(Array.prototype.slice.call(arguments, 0))) } } var a = t; for (void 0 !== o ? a = t[o] = [] : o = "mixpanel", a.people = a.people || [], a.toString = function (e) { var t = "mixpanel"; return "mixpanel" !== o && (t += "." + o), e || (t += " (stub)"), t }, a.people.toString = function () { return a.toString(1) + ".people (stub)" }, p = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" "), r = 0; r < p.length; r++)i(a, p[r]); var l = "set set_once union unset remove delete".split(" "); a.get_group = function () { function e(e) { t[e] = function () { call2_args = arguments, call2 = [e].concat(Array.prototype.slice.call(call2_args, 0)), a.push([n, call2]) } } for (var t = {}, n = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), o = 0; o < l.length; o++)e(l[o]); return t }, t._i.push([e, n, o]) }, t.__SV = 1.2, (n = e.createElement("script")).type = "text/javascript", n.async = !0, n.src = "undefined" != typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js", (o = e.getElementsByTagName("script")[0]).parentNode.insertBefore(n, o)) }(document, window.mixpanel || [])</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G859EBFK8T"></script>
+    <script>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-G859EBFK8T")</script>
+    <script>!function (e, t, a, n, g) { e[n] = e[n] || [], e[n].push({ "gtm.start": (new Date).getTime(), event: "gtm.js" }); var m = t.getElementsByTagName(a)[0], r = t.createElement(a); r.async = !0, r.src = "https://www.googletagmanager.com/gtm.js?id=GTM-TQSNZPC8", m.parentNode.insertBefore(r, m) }(window, document, "script", "dataLayer")</script>
+    <script type="text/javascript">!function (t, e, n, c, r, a, i) { t[n] = t[n] || function () { (t[n].q = t[n].q || []).push(arguments) }, (a = e.createElement(c)).async = 1, a.src = "https://www.clarity.ms/tag/irykvzuz58", (i = e.getElementsByTagName(c)[0]).parentNode.insertBefore(a, i) }(window, document, "clarity", "script")</script>
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+    <script type="text/javascript" id="vwoCode">window._vwo_code = window._vwo_code || function () { var e = "body", t = "opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important", n = !1, i = window, o = document, r = o.querySelector("#vwoCode"), c = { use_existing_jquery: function () { return false }, library_tolerance: function () { return 2500 }, hide_element_style: function () { return "{" + t + "}" }, finish: function () { if (!n) { n = !0; var e = o.getElementById("_vis_opt_path_hides"); e && e.parentNode.removeChild(e) } }, finished: function () { return n }, load: function (e) { var t = o.createElement("script"); t.fetchPriority = "high", t.src = e, t.type = "text/javascript", t.onerror = function () { _vwo_code.finish() }, o.getElementsByTagName("head")[0].appendChild(t) }, getVersion: function () { return 1.5 }, getMatchedCookies: function (e) { var t = []; return document.cookie && (t = document.cookie.match(e) || []), t }, getCombinationCookie: function () { var e = c.getMatchedCookies(/(?:^|;)\s?(_vis_opt_exp_\d+_combi=[^;$]*)/gi); e = e.map((function (e) { try { var t = decodeURIComponent(e); return /_vis_opt_exp_\d+_combi=(?:\d+,?)+\s*$/.test(t) ? t : "" } catch (e) { return "" } })); var t = []; return e.forEach((function (e) { var n = e.match(/([\d,]+)/g); n && t.push(n.join("-")) })), t.join("|") }, init: function () { if (!(o.URL.indexOf("__vwo_disable__") > -1)) { i.settings_timer = setTimeout((function () { _vwo_code.finish() }), 2e3); var n = o.currentScript, a = o.createElement("style"), s = n && !n.async ? e ? e + "{" + t + "}" : "" : c.lA = 1, d = o.getElementsByTagName("head")[0]; a.setAttribute("id", "_vis_opt_path_hides"), r && a.setAttribute("nonce", r.nonce), a.setAttribute("type", "text/css"), a.styleSheet ? a.styleSheet.cssText = s : a.appendChild(o.createTextNode(s)), d.appendChild(a); var u = this.getCombinationCookie(); return this.load("https://dev.visualwebsiteoptimizer.com/j.php?a=899&u=" + encodeURIComponent(o.URL) + "&f=1&vn=1.5" + (u ? "&c=" + u : "")), settings_timer } } }; return i._vwo_settings_timer = c.init(), c }()</script>
+    <script src="https://cdn.amplitude.com/script/cfe9c8ee1ae27cb009475edfea0abd04.js"></script><script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('cfe9c8ee1ae27cb009475edfea0abd04', {"fetchRemoteConfig":true,"autocapture":true});</script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="label"><img src="imgs/Logo.png" alt="company logo">
+        </div>
+        <div class="navigation">
+            <div class="menu-btn">
+                <div class="menu-icon">
+                    <input class="menu-icon__cheeckbox" id="menu-switcher" type="checkbox" />
+                    <div>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav role="navigation" class="menubar">
+                        <ul>
+                            <li><a href="#client-description" class="menu-link">Who is this course for?</a></li>
+                            <li><a href="#info-team" class="menu-link">About team</a></li>
+                            <li><a href="#modules" class="menu-link">Course Program</a></li>
+                            <li><a href="#reviews" class="menu-link">Reviews</a></li>
+                            <li><a href="#faq" class="menu-link">FAQ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="whole-part">
+            <section id="general-info">
+                <h2>GENTLE HEART HEALING: <span>STEP-BY-STEP GUIDE TO RECLAIMING YOURSELF AFTER HEARTBREAK</span></h2>
+                <h4>Course on releasing the pain, reclaiming joy, and rediscovering strength in just 14 days</h4>
+            </section>
+            <section id="team"></section>
+            <section id="instructions">
+                <h2><span>IN </span>JUST 14 DAYS<span>, YOU WILL:</span></h2>
+                <ul>
+                    <li><p><span>Understand and release the sources of your heartache</span> gaining clarity on what holds you back and learning ways to let go.</p></li>
+                    <li><p><span>Replace the emotional chaos of constant reminders</span> with small routines that help you feel grounded and bring control back to your days.</p></li>
+                    <li><p><span>Develop a personalized action plan</span> for emotional healing, taking steps each day to rebuild, restore hope, and move forward.</p></li>
+                    <li><p><span>Establish meaningful self-care practices</span> that nurture you, helping you recharge daily with compassion and supportive routines.</p></li>
+                    <li><p><span>Feel calm, resilient, and more empowered, </span>as your heartache softens and you reconnect with a sense of calm, control, and future possibilities.</p></li>
+                </ul>
+            </section>
+        </div>
+        <section class="special-conditions">
+            <div class="condition">
+                <p class="cond-name">Special conditions:</p>
+                <p><span class="oval">74% OFF</span>
+                    <span class="oval">AND 2 BONUSES</span></p>
+            </div>
+            <div class="condition">
+                <p class="cond-name">Price:</p>
+                <p class="cond-text"><span class="crossed">
+                    $144.23
+                </span> $37.50</p>
+            </div>
+            <div class="condition">
+                <p class="cond-name">Before the price increase:</p>
+                <p class="cond-text timer-text">10 <span class="vals">h.</span> 49 <span class="vals">min.</span> 45 <span class="vals">sec.</span></p>
+            </div>
+            <div class="btn-wrapper">
+                <button onclick="redirectToPayment()" class="btn-normal success">
+                    GET ACCESS
+                </button>
+                <p class="under-btn-text"><span>5000+ people</span> like you have already taken control of their time</p>
+            </div>
+        </section>
+        <section class="institutes">
+            <h4>Backed by Proven Financial Principles</h4>
+            <div class="logos">
+                <img src="imgs/image1.png" alt="hbr logo">
+                <img src="imgs/image2.png" alt="stanford logo">
+                <img src="imgs/image3.png" alt="ft logo">
+            </div>
+        </section>
+        <section class="history">
+            <h2 class="thesis">15+ years <span>EMOTIONAL RECOVERY EXPERTISE</span></h2>
+            <p class="description">— Developed by a team of experts in psychology and wellness, our program has been fine-tuned over the years. We’ve carefully tested and refined countless healing methods to bring you a simple, effective way to recover and rebuild — just 5 minutes a day.</p>
+        </section>
+        <section id="client-description">
+            <div class="heading">
+                <h2>WHO IS THIS COURSE FOR?</h2>
+                <h4>Each of us experiences heartbreak differently, but we all share one thing — the desire to finally <span>move past the pain and rediscover peace</span> within ourselves 💔🌱</h4>
+            </div>
+            <div class="course-wrap">
+                <div class="course-heading">
+                    <h3>Facing a Heartbreaking Loss</h3>
+                    <div class="bubble">01</div>
+                </div>
+                <div class="image-block">
+
+                </div>
+                <div class="citation">
+                    <ul>
+                        <li>feeling crushed by the weight of a breakup, overwhelmed by sadness and confusion</li>
+                        <li>desperate for a way to heal, yet unsure of how to pick up the pieces and move forward</li>
+                        <li>longing to make sense of the whirlwind of emotions and find a glimmer of hope</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="course-wrap">
+                <div class="course-heading">
+                    <h3>Recovering from Toxic Love</h3>
+                    <div class="bubble">02</div>
+                </div>
+                <div class="image-block">
+
+                </div>
+                <div class="citation">
+                    <ul>
+                        <li>battling the emotional scars left by a hard relationship, striving to rebuild self-esteem</li>
+                        <li>stuck in a cycle of self-doubt and guilt, feeling like the pain will never fade</li>
+                        <li>searching for compassionate tools to set boundaries and reclaim self-worth</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="course-wrap">
+                <div class="course-heading">
+                    <h3>Grieving the Loss of a Loved One</h3>
+                    <div class="bubble">03</div>
+                </div>
+                <div class="image-block">
+
+                </div>
+                <div class="citation">
+                    <ul>
+                        <li>mourning the deep loss of a partner, feeling a profound emptiness in daily life</li>
+                        <li>wanting to honor their memory while struggling to navigate moving forward alone</li>
+                        <li>seeking gentle support to help process grief and rediscover lost joy</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="more-info">
+                <div class="visual-block">
+                    <div class="head-block">
+                        <h4>And most importantly</h4>
+<!--                        <picture>-->
+<!--                            <source srcset="imgs/Arrow1.svg" media="(max-width: 860px)" />-->
+<!--                            <img src="imgs/Arrow2.svg" alt="arrow down">-->
+<!--                        </picture>-->
+                    </div>
+                    <div class="illustration">
+                        <img src="imgs/Ellipse%202.jpg" alt="man shows ok">
+                    </div>
+                </div>
+                <div class="text-block">
+                    <h4>For the everyday person:</h4>
+                    <p>No matter your profession, age, or background, if you want to:</p>
+                    <ul>
+                        <li>make sense of these overwhelming feelings and start to heal from the heartbreak</li>
+                        <li>create your path to recovery that feels comforting and attainable</li>
+                    </ul>
+                    <p class="selected">We designed this course for you.</p>
+                </div>
+            </div>
+        </section>
+        <section class="special-conditions">
+            <div class="condition">
+                <p class="cond-name">Special conditions:</p>
+                <p><span class="oval">74% OFF</span>
+                    <span class="oval">AND 2 BONUSES</span></p>
+            </div>
+            <div class="condition">
+                <p class="cond-name">Price:</p>
+                <p class="cond-text"><span class="crossed">$144.23</span> $37.50</p>
+            </div>
+            <div class="condition">
+                <p class="cond-name">Before the price increase:</p>
+                <p class="cond-text timer-text">10 <span class="vals">h.</span> 49 <span class="vals">min.</span> 45 <span class="vals">sec.</span></p>
+            </div>
+            <div class="btn-wrapper">
+                <button onclick="redirectToPayment()" class="btn-normal success">
+                    GET ACCESS
+                </button>
+                <p class="under-btn-text">Your path to overcoming overwhelm begins with one simple step today</p>
+            </div>
+        </section>
+        <section id="info-team" class="info-team">
+            <div class="full-part">
+                <h2>HI, WE'RE THE MINDTECH TEAM</h2>
+                <p>Every one of us has been right where you are —overwhelmed by the pain of heartbreak and desperately searching for ways to heal and find peace. That’s why we came together: to create the support and tools needed to navigate this journey and help you reclaim control over your life.</p>
+            </div>
+            <img src="imgs/about_us.jpg" alt="team photo">
+            <p class="full-part">With years of personal experience, heartfelt insights, and practical strategies, we’ve developed a program designed to truly make a difference—starting with your emotional well-being. We believe that learning to process and heal from heartbreak is the key to unlocking a brighter, more fulfilling future, and we’re here to walk alongside you every step of the way.</p>
+        </section>
+        <section class="course-includes">
+            <h2>What the course includes</h2>
+            <p class="oval"><span>14</span> days</p>
+            <p class="oval"><span>14</span> modules</p>
+            <p class="oval"><span>5-15</span> minute every day</p>
+            <p class="oval"><span>14</span> practical tasks</p>
+            <p class="oval"><span>0</span> fluff</p>
+        </section>
+        <section id="modules" class="modules">
+            <div class="module-1">
+                <div class="module-head">
+                    <p class="oval">module</p>
+                    <p class="oval">01</p>
+                </div>
+                <div class="text-block">
+                    <h3>Emotional Acceptance and Stabilization</h3>
+                    <p>Gain clarity on the emotions swirling within, recognizing the weight of heartbreak and the feelings that make each day feel unbearable.</p>
+                </div>
+                <div class="blurred-module"></div>
+            </div>
+            <div class="module-2">
+                <div class="module-head">
+                    <p class="oval">module</p>
+                    <p class="oval">02</p>
+                </div>
+                <div class="text-block">
+                    <h3>Creating Emotional Boundaries</h3>
+                    <p>Discover small moments in your day to reclaim control, carving out space for self-care and what truly nurtures your spirit during this difficult time.</p>
+                </div>
+                <div class="blurred-module"></div>
+            </div>
+            <div class="module-3">
+                <div class="module-head">
+                    <p class="oval">module</p>
+                    <p class="oval">03</p>
+                </div>
+                <div class="text-block">
+                    <h3>Seeking Immediate Support</h3>
+                    <p>Identify support networks to help you through this challenging time, connecting with trusted individuals who can offer understanding and care.</p>
+                </div>
+                <div class="blurred-module"></div>
+            </div>
+            <div class="module-4">
+                <div class="module-head">
+                    <p class="oval">module</p>
+                    <p class="oval">04</p>
+                </div>
+                <div class="text-block">
+                    <h3>Managing Obsessive Thoughts and Rumination</h3>
+                    <p>Learn simple yet effective techniques to interrupt negative thought patterns, helping you find calm when emotions threaten to overwhelm you.</p>
+                </div>
+                <div class="blurred-module"></div>
+            </div>
+            <div class="warning">
+                <h3>listen, it already costs more than $37.50, <span>seriously</span></h3>
+                <p>join the course</p>
+                <button class="btn-normal access" onclick="redirectToPayment()" type="submit">GET ACCESS</button>
+            </div>
+            <div class="module-5">
+                <div class="module-head">
+                    <p class="oval">module</p>
+                    <p class="oval">05</p>
+                </div>
+                <div class="text-block">
+                    <h3>Self-Compassion and Affirmations</h3>
+                    <p>Cultivate a kinder inner dialogue and practice affirmations that foster self-love, allowing you to feel worthy of healing and support.</p>
+                </div>
+                <div class="blurred-module"></div>
+            </div>
+            <div class="module-6">
+                <div class="module-head">
+                    <p class="oval">module</p>
+                    <p class="oval">06</p>
+                </div>
+                <div class="text-block">
+                    <h3>Establishing Small Routines and Goals</h3>
+                    <p>Integrate manageable routines into your daily life that bring structure and purpose, helping you feel grounded and more in control.</p>
+                </div>
+                <div class="blurred-module"></div>
+            </div>
+            <div class="module-7">
+                <div class="module-head">
+                    <p class="oval">module</p>
+                    <p class="oval">07</p>
+                </div>
+                <div class="text-block">
+                    <h3>Visualizing the Future and Letting Go of the Past</h3>
+                    <p>Begin envisioning a hopeful future while releasing lingering feelings from the past, allowing space for new possibilities and personal growth.</p>
+                </div>
+                <div class="blurred-module"></div>
+            </div>
+            <div class="module-8">
+                <div class="module-head">
+                    <p class="oval">module</p>
+                    <p class="oval">08-14</p>
+                </div>
+                <div class="text-block">
+                    <h3>and much more...</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="summarize">
+            <h2>To summarize in <span>14 days</span> you WILL:</h2>
+            <ul>
+                <li>Stop feeling overwhelmed by heartbreak and begin to regain control over your emotions and daily life.</li>
+                <li>Breathe easier, knowing you’ve created space to focus on healing and what truly matters to your heart.</li>
+                <li>Feel an uplifting shift in your mood as you find small ways to navigate each day without a complete overhaul.</li>
+                <li>Discover moments of genuine joy that remind you of life’s beauty and the happiness still within reach.</li>
+                <li>Move forward with renewed confidence, equipped with supportive practices that help you manage pain and embrace healing.</li>
+            </ul>
+        </section>
+        <section id="reviews">
+            <h2>What Others Have to Say</h2>
+            <p>Don't just take our word for it, listen to thousands of others who have benefited from these methods.</p>
+            <div class="review-wrap">
+                <div class="review-heading">
+                    <img src="imgs/avatar1.png" alt="avatar">
+                    <p class="name">Laura S.</p>
+                </div>
+                <img class="rating" src="imgs/5%20star%20rating.svg" alt="avatar">
+                <p class="review">This will help you get through this difficult time, and you’ll feel less alone right away. I felt better from the first day, and it took just two weeks.</p>
+            </div>
+            <div class="review-wrap">
+                <div class="review-heading">
+                    <img src="imgs/avatar2.png" alt="avatar">
+                    <p class="name">Gregory T.</p>
+                </div>
+                <img class="rating" src="imgs/5%20star%20rating.svg" alt="avatar">
+                <p class="review">Wow! Even though I’m a skeptical person, I searched for this kind of information before seeking professional help. It changed my mindset from “I hate myself” to “everything is going to be okay” in less than a week.</p>
+            </div>
+            <div class="review-wrap">
+                <div class="review-heading">
+                    <img src="imgs/avatar3.png" alt="avatar">
+                    <p class="name">Linda S.</p>
+                </div>
+                <img class="rating" src="imgs/5%20star%20rating.svg" alt="avatar">
+                <p class="review">Do not hesitate. Especially if you’ve just ended a relationship, but even if you haven’t, it offers excellent insights. It helps you view relationships realistically, prompting deep reflection, and above all, encourages you to love and value yourself more.</p>
+            </div>
+            <div class="review-wrap">
+                <div class="review-heading">
+                    <img src="imgs/avatar4.png" alt="avatar">
+                    <p class="name">Adam F.</p>
+                </div>
+                <img class="rating" src="imgs/5%20star%20rating.svg" alt="avatar">
+                <p class="review">This is incredible, especially for women going through a breakup. It’s practical—no overthinking, no overanalyzing—just accepting things as they are! I bet not even our friends are this sincere.</p>
+            </div>
+            <div class="review-wrap">
+                <div class="review-heading">
+                    <img src="imgs/avatar5.png" alt="avatar">
+                    <p class="name">Amanda R.</p>
+                </div>
+                <img class="rating" src="imgs/5%20star%20rating.svg" alt="avatar">
+                <p class="review">This has literally been my breakup buddy during a recent split. For anyone seeking a long-term solution, trust the advice and implement the exercises. It made me feel a million times better, and I’m sure it will do the same for you.</p>
+            </div>
+        </section>
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <p>Below you will find some of the most frequently asked questions.</p>
+            <div class="toggle-down">
+                <label class="question" for="check1" tabindex="0" aria-label="Toggle" role="button">
+                    <p>Will this course really help me recover?</p>
+                    <img src="imgs/%5BFAQ%5D%20More%20Icon.svg" alt="cross">
+                </label>
+                <div class="wrapper">
+                    <input type="checkbox" class="check" id="check1" checked>
+                    <div class="answer">
+                        <div class="body">The combination of practical strategies and emotional support in this program is crafted to gently guide you through your pain, helping you find your healing path.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="toggle-down">
+                <label class="question" for="check2" tabindex="0" aria-label="Toggle" role="button">
+                    <p>What if I don’t have too much free time?</p>
+                    <img src="imgs/%5BFAQ%5D%20More%20Icon.svg" alt="cross">
+                </label>
+                <div class="wrapper">
+                    <input type="checkbox" class="check" id="check2" checked>
+                    <div class="answer">
+                        <div class="body">You’ll need just around 5-15 minutes per day to complete each task, making it easy to fit healing into your daily routine.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="toggle-down">
+                <label class="question" for="check3" tabindex="0" aria-label="Toggle" role="button">
+                    <p>I feel like I’m too broken to heal. Can this really work for me?</p>
+                    <img src="imgs/%5BFAQ%5D%20More%20Icon.svg" alt="cross">
+                </label>
+                <div class="wrapper">
+                    <input type="checkbox" class="check" id="check3" checked>
+                    <div class="answer">
+                        <div class="body">This course is designed to help you embrace your emotions and gradually rebuild your strength. Healing is absolutely possible, no matter how lost you feel right now.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="toggle-down">
+                <label class="question" for="check4" tabindex="0" aria-label="Toggle" role="button">
+                    <p>What if I don’t see immediate results?</p>
+                    <img src="imgs/%5BFAQ%5D%20More%20Icon.svg" alt="cross">
+                </label>
+                <div class="wrapper">
+                    <input type="checkbox" class="check" id="check4" checked>
+                    <div class="answer">
+                        <div class="body">Each step is thoughtfully crafted to help you feel better, even if it’s just a small change. Trust that you’re not alone in this process, and relief will come.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="toggle-down">
+                <label class="question" for="check5" tabindex="0" aria-label="Toggle" role="button">
+                    <p>What if I struggle with sticking to routines?</p>
+                    <img src="imgs/%5BFAQ%5D%20More%20Icon.svg" alt="cross">
+                </label>
+                <div class="wrapper">
+                    <input type="checkbox" class="check" id="check5" checked>
+                    <div class="answer">
+                        <div class="body">The program is designed to be flexible and easy to follow, making it simple to build lasting changes that support your healing journey.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="special-conditions">
+            <h2>LIMITED TIME OFFER <span>JOIN THE COURSE NOW</span></h2>
+            <div class="condition">
+                <p class="cond-name">Before the price increase:</p>
+                <p class="cond-text timer-text">10 <span class="vals">h.</span> 49 <span class="vals">min.</span> 45 <span class="vals">sec.</span></p>
+            </div>
+            <div class="condition">
+                <p class="cond-name">Price:</p>
+                <p class="cond-text"><span class="crossed">$144.23</span> $37.50</p>
+            </div>
+            <div class="condition">
+                <p class="cond-name">Special conditions:</p>
+                <p><span class="oval">74% OFF</span>
+                    <span class="oval">AND 2 BONUSES</span></p>
+            </div>
+            <div class="btn-wrapper">
+                <button onclick="redirectToPayment()" class="btn-normal success">
+                    GET ACCESS
+                </button>
+                <p class="under-btn-text">Your path to overcoming overwhelm begins with one simple step today</p>
+            </div>
+        </section>
+        <section class="info-team">
+            <h2 class="full-part">OUR GUARANTEE: LOVE IT OR GET A <span>FULL REFUND</span></h2>
+            <img src="imgs/team.jpg" alt="team photo">
+            <div class="full-part">
+                <p>We’re fully committed to helping you transform your financial habits. We want you to not only see results but also feel confident, empowered, and excited to leave us amazing feedback and explore our future products. If, for any reason, our mini-course doesn’t meet your expectations or align with your needs, we’ll gladly give you your money back — no hard feelings.</p>
+                <p class="important">Try it risk-free for 14 days and see the change for yourself.</p>
+            </div>
+        </section>
+    </main>
+<!--    <footer>-->
+<!--        <ul>-->
+<!--            <li><a href="/">Privacy Policy</a></li>-->
+<!--            <li><a href="/">Data Policy</a></li>-->
+<!--            <li><a href="mailto:help@mindtech.health">help@mindtech.health</a></li>-->
+<!--        </ul>-->
+<!--    </footer>-->
+    <!--Modal Window--->
+    <div id="myModal" class="modal-window">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="payment-form">
+                <div class="email-element">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div id="payment-element">
+                    <!--Stripe.js injects the Payment Element-->
+                </div>
+                <button id="submit">
+                    <div class="spinner hidden" id="spinner"></div>
+                    <span id="button-text">Pay now</span>
+                </button>
+                <div id="payment-message" class="hidden"></div>
+                <div id="card-errors" role="alert"></div>
+            </form>
+            <div class="stripe-block">
+                <p>Powered by</p> <a href="https://stripe.com/"><img src="imgs/stripe.png" alt="stripe-logo"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
